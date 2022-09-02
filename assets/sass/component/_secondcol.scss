@@ -1,0 +1,64 @@
+/***********************************************/
+/** Second Col **/
+/***********************************************/
+#second-col{
+    padding-right: 25px;
+    .skills, .languages {
+        font-weight: 600;
+        .rate{
+            .round-circle{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                border: 2px solid $primary;
+            }
+        }
+        .sub-skill, .sub-lang{
+            margin-bottom: 5px;
+        }
+    }
+    .skills{
+        .sub-skills-header{
+            color: darken($primary,10);
+        }
+    } 
+
+    .volunteer, .organization{
+        margin-bottom: 10px;
+        .header{
+            font-size: 14px;
+            margin: 0;
+        }
+        .description{
+            font-size: 12px;
+            font-weight: 600;
+            color: darken($gray-600,10);
+            margin-bottom: 8px;
+            padding-left: 6px;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    .certificates{
+        .sub-section-description{
+            padding: 0;
+            margin-bottom: 3px;
+            .source{
+                color: $gray-600;
+                font-style: italic;
+                font-size: 11px;
+            }
+        }
+    }
+    .interests{  
+        padding-right: 30px;
+        .sub-inter{
+            border: 2px solid $gray-500;
+            padding: 6px 8px;
+            color: $gray-700;
+            font-weight: 600;
+        }
+    }
+}

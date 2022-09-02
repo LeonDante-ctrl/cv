@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+
+    <!-- bootstrap link  -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Boxicons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
+    <!-- Vendor CSS Files -->
+    <!--icofont -->
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <!-- Add animate css  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <!-- Add google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+    <!-- Custom styles for this site -->
+    <style>
+        *,
+        p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            overflow-x: hidden;
+            font-family: "Open Sans", sans-serif;
+            width: 100%;
+            padding-top: 30px;
+            color: #212529;
+            font-size: 12px;
+        }
+        
+        a * {
+            color: #007fcc;
+        }
+        
+        a *:hover {
+            color: #005f99;
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            font-family: "Raleway", sans-serif;
+        }
+        
+        hr {
+            margin: 0 0 20px;
+            color: #007fcc;
+            border: 1px solid #007fcc;
+        }
+        
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .blue-box {
+            width: 35px;
+            height: 50px;
+            background-color: #007fcc;
+        }
+        
+        .primary-bg {
+            background-color: #007fcc;
+        }
+        
+        .section-padding {
+            padding-bottom: 15px;
+        }
+        
+        h2.section-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        p.sub-section-description {
+            padding-top: 4px;
+            padding-left: 5px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        /***********************************************/
+        /** Header **/
+        /***********************************************/
+        
+        #header {
+            color: #212529;
+            padding-right: 25px;
+        }
+        
+        #header .first-box {
+            background-color: #005080;
+        }
+        
+        #header .header-section .header {
+            font-size: 32px;
+        }
+        
+        #header .header-section .sub-header {
+            font-size: 18px;
+            color: #007fcc;
+        }
+        
+        #header .header-section .description {
+            font-size: 12px;
+            color: #343a40;
+            font-weight: 700;
+        }
+        
+        #header .social-links ul {
+            list-style-type: none;
+        }
+        
+        #header .social-links ul li {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        #header .social-links ul li a {
+            color: #212529;
+            text-decoration: none;
+        }
+        
+        #header .social-links ul li i {
+            color: #212529;
+            padding-left: 6px;
+        }
+        
+        #header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #007fcc;
+        }
+        /***********************************************/
+        /** first Col **/
+        /***********************************************/
+        
+        #frist-col {
+            padding-right: 30px;
+        }
+        
+        #frist-col .sub-section-header {
+            font-size: 18px;
+            margin-bottom: 2px;
+            font-weight: 800;
+        }
+        
+        #frist-col .sub-section-header .date {
+            font-size: 10px;
+            color: #007fcc;
+        }
+        
+        #frist-col .experiences .square-box,
+        #frist-col .education .square-box {
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            background-color: #007fcc;
+        }
+        
+        #frist-col .experiences .sub-exp,
+        #frist-col .experiences .sub-edu,
+        #frist-col .education .sub-exp,
+        #frist-col .education .sub-edu {
+            margin-bottom: 10px;
+        }
+        
+        #frist-col .location {
+            color: #868e96;
+            font-style: italic;
+            font-size: 11px;
+        }
+        
+        #frist-col .other-exp ul {
+            list-style-type: none;
+            padding-left: 6px;
+        }
+        
+        #frist-col .other-exp ul li {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        
+        #frist-col .other-exp ul .round-box {
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: #007fcc;
+        }
+        /***********************************************/
+        /** Second Col **/
+        /***********************************************/
+        
+        #second-col {
+            padding-right: 25px;
+        }
+        
+        #second-col .skills,
+        #second-col .languages {
+            font-weight: 600;
+        }
+        
+        #second-col .skills .rate .round-circle,
+        #second-col .languages .rate .round-circle {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #007fcc;
+        }
+        
+        #second-col .skills .sub-skill,
+        #second-col .skills .sub-lang,
+        #second-col .languages .sub-skill,
+        #second-col .languages .sub-lang {
+            margin-bottom: 5px;
+        }
+        
+        #second-col .skills .sub-skills-header {
+            color: #005f99;
+        }
+        
+        #second-col .volunteer,
+        #second-col .organization {
+            margin-bottom: 10px;
+        }
+        
+        #second-col .volunteer .header,
+        #second-col .organization .header {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        #second-col .volunteer .description,
+        #second-col .organization .description {
+            font-size: 12px;
+            font-weight: 600;
+            color: #6c757d;
+            margin-bottom: 8px;
+            padding-left: 6px;
+        }
+        
+        #second-col .volunteer a:hover,
+        #second-col .organization a:hover {
+            text-decoration: none;
+        }
+        
+        #second-col .certificates .sub-section-description {
+            padding: 0;
+            margin-bottom: 3px;
+        }
+        
+        #second-col .certificates .sub-section-description .source {
+            color: #868e96;
+            font-style: italic;
+            font-size: 11px;
+        }
+        
+        #second-col .interests {
+            padding-right: 30px;
+        }
+        
+        #second-col .interests .sub-inter {
+            border: 2px solid #adb5bd;
+            padding: 6px 8px;
+            color: #495057;
+            font-weight: 600;
+        }
+        /*# sourceMappingURL=cv.css.map */
+    </style>
+
+</head>
+
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-section col-6">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="blue-box first-box"> </div>
+                        </div>
+                        <div class="col-11">
+                            <h1 class="header">Leon Baraka</h1>
+                            <h2 class="sub-header">Software Engineer | FullStack developer
+                            </h2>
+                            <p class="description">
+                                I am a Full-Stack Engineer engineer passionate by web development, data science, and Artificial Intelligence. I am self fast learner. I enjoy coding for hours and solve errors. I love challenges, learn, and got great energy to work with
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="image-fuild rounded-border" src="/home/danteshash/Music/MyCV-master/dante.jpg" alt="Leon Dante">
+                </div>
+                <div class="social-links col-4">
+                    <ul class="links text-right">
+                        <li><a href="mailto:maxgamerdu@gmail.com">maxgamerdu@gmail.com<i class="icofont-envelope"></i></a></li>
+                        <li>+254 721399458<i class="icofont-phone"></i></li>
+                        <li>Nairobi, Kenya<i class="icofont-google-map"></i></li>
+                        <li><a href="https://www.linkedin.com/in/leon-dante-399840214/" target="blank">https://www.linkedin.com/in/leon-dante-399840214/<i class='bx bxl-linkedin' ></i></a></li>
+                        <li><a href="https://github.com/leondante-ctrl" target="blank">github.com/LeonDante <i class='bx bxl-github'></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/18780103/leon-dante" target="blank">stackoverflow.com/users/18780103/leon-dante<i class="icofont-stack-overflow"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <!--- First Column-->
+                <div class="col-7" id="frist-col">
+                    <!-- Expreiences -->
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="blue-box "> </div>
+                        </div>
+                        <div class="experiences col-11 section-padding">
+                            <h2 class="section-header">Expreiences</h2>
+                            <div class="sub-exp">
+                                <h3 class="sub-section-header"> <span class="square-box"></span> Front End Web Developer <span class="date">(11/2019 - Present)</span> </h3>
+                                <p class="location"> Freelancer - Self Employed</p>
+                                <p class="sub-section-description"> Develop highly interactive websites using html, css , Javascript as well as JQuery intergrated perfectly with good SEO practice and highly optimized.
+                                    <a href=""></a>
+                                </p>
+                            </div>
+
+                            <div class="sub-exp">
+                                <h3 class="sub-section-header"> <span class="square-box"></span> <strong>MIT/EDU</strong><span class="date">(06/2022 - 12/2022)</span> </h3>
+                                <p class="location">MIT-USA laboratories</p>
+                                <p class="sub-section-description">Final piece of a little search system i put up to demonstrate use of stated technologies Compiler <a href="https://leongram.herokuapp.com/" target="blank"><i class="icofont-external-link"></i></a></p>
+                            </div>
+
+                            <div class="sub-exp">
+                                <h3 class="sub-section-header"> <span class="square-box"></span> Internship <span class="date">(07/2018 - 09/2018)</span></h3>
+                                <p class="location">AMA XpertEye | Freelance</p>
+                                <p class="sub-section-description">Creating a recovery and registration management system web application using laravel,redux ...etc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Expreiences -->
+                    <!-- Other Experiences  -->
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="blue-box "> </div>
+                        </div>
+
+                        <div class="other-exp col-11 section-padding">
+                            <h2 class="section-header">Other experiences</h2>
+                            <ul>
+
+                                <li> <span class="round-box"></span> Other projects (templates, web apps, Neural Networks ... etc) are in my GitHub account. The technologies used were: HTML, CSS, js, jquery, sass, bootstap5, angular, python, flask, SQL, PyTorch
+                                    in most of them.
+                                    <a href="https://github.com/leondante-ctrl" target="blank"><i class="icofont-external-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Other Experiences  -->
+                    <!-- Education -->
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="blue-box "> </div>
+                        </div>
+                        <div class="education col-11 section-padding">
+                            <h2 class="section-header">Education</h2>
+                            <div class="sub-edu">
+                                <h3 class="sub-section-header"> <span class="square-box"></span> Front End Dev, Angular <span class="date">(06/2020 - 08/2021)</span> </h3>
+                                <p class="location"> MIT/EDU </p>
+                                <p class="sub-section-description"> Certification in CS50 that specialized in C#, HTML, CSS AND Javascript
+                                    <a href=""></a>
+                                </p>
+                            </div>
+                            <div class="sub-edu">
+                                <h3 class="sub-section-header"> <span class="square-box"></span> Full Stack Web Dev <span class="date">(01/2020 - 02/2022)</span> </h3>
+                                <p class="location"> Moringa School</p>
+                                <p class="sub-section-description"> From this program, I have learned how to create a server-side, data-driven web application that supports any front-end and can scale to support hundreds of thousands of users. I have been able through this program to design
+                                    and build databases for software applications, create and deploy database-backed web APIs, and secure and manage user authentication and access control for an application backend. I am also learning how to deploy a
+                                    Flask-based web application to the cloud using Docker and Heroku <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044" target="blank"><i class="icofont-external-link"></i></a> </p>
+                            </div>
+
+                            <div class="sub-edu">
+                                <h3 class="sub-section-header"> <span class="square-box"></span> Data Science & Artificial Intelligence <span class="date">(11/2019 – 01/2020)</span> </h3>
+                                <p class="location"> #!/ALX</p>
+                                <p class="sub-section-description"> Through Data Science <a href="https://www.alxafrica.com/programme_post/data-analyst/" target="blank"><i class="icofont-external-link"></i></a> I have learned the programming fundamentals required for a career in data science.
+                                    By the end of the program, I have been able to use Python, SQL, Command-Line, and Git. And though AI Programming with Python, I have learned Python, NumPy, pandas, Matplotlib, PyTorch, Calculus, and Linear Algebra—the
+                                    foundations for building your neural network <a href="https://www.udacity.com/course/ai-programming-python-nanodegree--nd089" target="blank"><i class="icofont-external-link"></i></a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /Education -->
+                </div>
+                <!-- End First Column -->
+
+                <!-- Start Second Column -->
+                <div class="col-5" id="second-col">
+                    <div class="row">
+                        <!-- Skills  -->
+                        <div class="col-12 skills section-padding">
+                            <h2 class="section-header">Skills</h2>
+                            <div class="sub-skill row">
+                                <div class="col-8">
+                                    <p> <span class="sub-skills-header">web development, web design: </span> HTML, CSS, js, jquery, sass, bootstrap, flask, Django, Angular, git</p>
+                                </div>
+                                <div class="rate col-4">
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle"></span>
+                                </div>
+                            </div>
+                            <div class="sub-skill row">
+                                <div class="col-8">
+                                    <p> <span class="sub-skills-header">Programming Languages:</span> C, Python, SQL, PostgreSQL, Mysql, PyTorch, Flask, Django, Javascript
+                                    </p>
+                                </div>
+                                <div class="rate col-4">
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle"></span>
+                                    <span class="round-circle"></span>
+                                </div>
+                            </div>
+                            <div class="sub-skill row">
+                                <div class="col-8">
+                                    <p><span class="sub-skills-header">Computer skills:</span> Windows, Linux, CLI, Microsoft tools</p>
+                                </div>
+                                <div class="rate col-4">
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle"></span>
+                                </div>
+                            </div>
+
+                            <div class="sub-skill row">
+                                <div class="col-8">
+                                    <p><span class="sub-skills-header">Soft Skills:</span> Communication, Public Speaking, TeamWork
+                                    </p>
+                                </div>
+                                <div class="rate col-4">
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle primary-bg"></span>
+                                    <span class="round-circle "></span>
+                                    <span class="round-circle"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Skills  -->
+                        <!-- Certificates  -->
+                        <div class="col-12 certificates section-padding">
+                            <h2 class="section-header">Certificates</h2>
+                            <div class="sub-cert">
+                                <p class="sub-section-description">FullStack Development <span class="source">(Moringa)</span> <a href="" target="blank"><i class="icofont-external-link"></i></a> </p>
+                            </div>
+                            <div class="sub-cert">
+                                <p class="sub-section-description">Other Certificates <span class="source">(Udemy, One Million Coders, SoloLearn ...etc)</span> <a href="https://www.linkedin.com/in/leon-dante-399840214/details/certifications/" target="blank"><i class="icofont-external-link"></i></a></p>
+                            </div>
+                        </div>
+                        <!-- /Certificates -->
+                        <!-- /Volunteer -->
+                        <!-- Organization -->
+                        <div class="col-12 organization section-padding">
+                            <h2 class="section-header">Organization</h2>
+                            <div class="sub-org">
+                                <h3 class="header">Freelancer <span>(2017 - Present)</span> <a href="https://www.facebook.com/GDGAlgiers/" target="blank"><i class="icofont-external-link"></i></a></h3>
+                                <p class="description">Working on managing a database for an undisclosed company</p>
+                            </div>
+
+                        </div>
+                        <!-- /Organization -->
+
+                        <!-- Additional Activities -->
+                        <div class="col-12 additional-activities section-padding">
+                            <h2 class="section-header">Additional-Activities</h2>
+                            <div class="sub-addact">
+                                <p class="sub-section-description">Manage some Facebook Pages and Groups: DZ Inventors <a href="https://www.facebook.com/DZ.Inventors/" target="blank"><i class="icofont-external-link"></i></a>, DZ Programmers <a href="https://www.facebook.com/groups/260047011405952/"
+                                        target="blank"><i class="icofont-external-link"></i></a>
+
+
+                            </div>
+                            <!-- /Additional Activities -->
+
+                            <!-- Languages  -->
+                            <div class="col-12 languages section-padding">
+                                <h2 class="section-header">Languages</h2>
+                                <div class="sub-lang row">
+                                    <div class="col-8">
+                                        <p> English, French</p>
+                                    </div>
+                                    <div class="rate col-4">
+                                        <span class="round-circle primary-bg"></span>
+                                        <span class="round-circle primary-bg"></span>
+                                        <span class="round-circle primary-bg"></span>
+                                        <span class="round-circle primary-bg"></span>
+                                        <span class="round-circle"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /Languages  -->
+
+                        <!-- Interests -->
+                        <div class="col-12 interests section-padding">
+                            <h2 class="section-header">Intersts</h2>
+                            <div class="sub-inter">
+                                <p>
+                                    Web dev/design, UI & UX design, Data Science & AI, CyberSec, Upskiling, Writing, Video Editing, Soft Skills, Languages & Social Activities, Sport, Music and most importantly , fitness
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Interests -->
+                    </div>
+                </div>
+                <!-- End Second Column -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Content -->
+
+
+    <!-- bootstrap links  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,50 @@
+/***********************************************/
+/** first Col **/
+/***********************************************/
+#frist-col{
+    padding-right: 30px;
+    .sub-section-header{
+        font-size: 18px;
+        margin-bottom: 2px;
+        font-weight: 800;
+        .date{
+            font-size: 10px;
+            color: $primary;
+        }
+    }
+    .experiences, .education{
+        .square-box{
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            background-color: $primary;
+        }
+        .sub-exp, .sub-edu{
+            margin-bottom: 10px;
+        }
+    }
+    .location{
+        color: $gray-600;
+        font-style: italic;
+        font-size: 11px;
+    }
+    // Other experiences
+    .other-exp{
+        ul{
+            list-style-type: none;
+            padding-left: 6px;
+            li{
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+            .round-box{
+                display: inline-block;
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,68 @@
+// Global styling for this template
+*,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    @include body-font;
+    width: 100%;
+    padding-top: 30px;
+    color: $gray-900;
+    font-size: 12px;
+}
+
+a *{
+    color: $primary;
+    &:hover {
+        color: darken($primary, 10%);
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    @include heading-font;
+}
+
+hr{
+  margin: 0 0 20px;
+  color: $primary;
+  border: 1px solid $primary;
+}
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+.blue-box{
+  width: 35px;
+  height: 50px;
+  background-color: $primary;
+}
+
+.primary-bg{
+  background-color: $primary;
+}
+.section-padding{
+  padding-bottom: 15px;
+}
+
+h2.section-header{
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+p.sub-section-description{
+  padding-top: 4px;
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
